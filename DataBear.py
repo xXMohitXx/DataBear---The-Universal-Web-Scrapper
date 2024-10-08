@@ -39,7 +39,7 @@ if st.button('Scrape Data'):
             if results:
                 st.write(f"Found {len(results)} elements matching your criteria.")
                 for i, result in enumerate(results):
-                    st.write(f"{i + 1}. {result}")
+                    st.write(f"{i + 1}. {result} \n")
 
                 # Offer to download as CSV
                 df = pd.DataFrame(results, columns=["Scraped Data"])
